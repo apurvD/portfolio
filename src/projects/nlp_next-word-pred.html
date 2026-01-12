@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Digital Flea Market</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<style>
+    .screenshot-gallery {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        /* spacing between images */
+        align-items: center;
+        /* center images */
+        margin: 2rem 0;
+    }
+
+    .project-image {
+        width: 85%;
+        max-width: 900px;
+        border: 2px solid #e5e7eb;
+        /* light gray border */
+        border-radius: 8px;
+        padding: 8px;
+        background: white;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+</style>
+
+<body>
+    <div id="navbar-root"></div>
+
+    <main class="section-container">
+        <section id="digital-flea-market" class="project-section">
+            <header class="project-header">
+                <h1>Utilizing Machine Learning Techniques to Predict Subsequent Words in Sentences</h1>
+                <p class="project-tagline">
+                    Ever wondered how predictive text works? The main aim of this project is to predict the subsequent
+                    word using the n-gram language model.
+                    <br>
+                    <a href="https://medium.com/@alfredbobmanuel1994/utilizing-machine-learning-techniques-to-predict-subsequent-words-in-sentences-3134bd64229f/" target="_blank"
+                        target="_blank">An article about the project is available here!</a>
+                </p>
+            </header>
+            <img src="../images/nlp_home.png" alt="Flea Market App Screenshot" class="project-image"
+                width="850px" height="450px">
+            <section class="project-overview">
+                <h2>Project Objective</h2>
+                <p>
+                    Designed and deployed a deep learning model capable of predicting the next word in a sentence with
+                    high accuracy and low loss. The goal was to generate coherent, meaningful text and ensure strong
+                    generalization to unseen data. A user-friendly interface was also built to make predictions
+                    accessible and interactive.
+                </p>
+            </section>
+
+            <section class="project-problem">
+                <h2>Workflow Overview</h2>
+                <p>
+                <ul>
+                    <li>Data Collection & Preprocessing: Cleaned and structured raw text data, then created five
+                        datasets corresponding to different n-gram levels.</li>
+
+                    <li>Exploratory Data Analysis (EDA): Analyzed word distributions, sequence patterns, and token
+                        frequency to inform model design.</li>
+
+                    <li>Modeling: Trained five GRU-based RNN models — one for each n-gram level — using
+                        TensorFlow/Keras.</li>
+
+                    <li>Evaluation: Compared models based on accuracy and log loss. The best model achieved 99.61%
+                        accuracy and 0.0094 log loss.</li>
+
+                    <li>Deployment: Packaged the final model with a simple UI for real-time predictions.</li>
+                </ul>
+                </p>
+            </section>
+
+            <section class="project-features">
+                <h2>Dataset Description</h2>
+                <img src="../images/nlp_dataset.png" alt="Dataset Screenshot" class="project-image">
+                <ul>
+                    <li>For this project, we obtained our dataset from Kaggle.</li>
+                    <li>We used the Medium Articles Dataset, which is available at the following link: <a href="https://www.kaggle.com/datasets/dorianlazar/medium-articles-dataset" target="_blank" rel="noopener noreferrer">https://www.kaggle.com/datasets/dorianlazar/medium-articles-dataset</a>.</li>
+                </ul>
+            </section>
+
+            <section class="project-implementation">
+                <h2>Modelling Highlights</h2>
+                <ul>
+                    <li>Five dataset text files were generated using n-gram language models, which ranged from unigram to five-gram.</li>
+                    <li>These datasets were then employed to train five distinct GRU-based RNN models, with each model containing five hidden layers.</li>
+                </ul>
+                <img src="../images/nlp_model.png" alt="Model Architecture Screenshot" class="project-image">
+                <p>The 5 layers were as follows</p>
+                <ol>
+                    <li>
+                        Embedding Layer: Converts input words into dense vectors of fixed size, capturing semantic
+                        relationships.
+                    </li>
+                    <li>
+                        Two GRU Layers: Five stacked Gated Recurrent Unit layers process the sequential data, capturing
+                        temporal dependencies and patterns in the text.
+                    </li>
+                    <li>
+                        Dense Output Layers: A fully connected layer with a softmax activation function to predict the
+                        next word from the vocabulary.
+                    </li>
+                </ol>
+            </section>
+
+            <section class="project-media">
+                <h2>Screenshots & Visuals</h2>
+                <p>
+                    Below is the demo video showcasing key features of the Next Word Prediction application:
+                </p>
+                <div class="project-demo">
+                    <video width="100%" controls>
+                        <source src="../projects/Deployment_NWP.mp4" type="video/mp4">
+                    </video>
+                    <h4>Project Demo</h4>
+                </div>
+                <div class="screenshot-gallery">
+                    <img src="../images/nlp_EDA1.png" alt="EDA 1">
+                    <img src="../images/nlp_EDA2.png" alt="EDA 2>
+                </div>
+                </div>
+            </section>
+
+            <section class="project-links">
+                <h2>Links</h2>
+                <ul>
+                    <li><a href="https://github.com/apurvD/Team-VisPy-Next-Word-Prediction" target="_blank"
+                            rel="noopener noreferrer">View Source on GitHub</a></li>
+                </ul>
+            </section>
+        </section>
+    </main>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

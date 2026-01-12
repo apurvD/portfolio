@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Digital Flea Market</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<style>
+  .screenshot-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* spacing between images */
+    align-items: center;
+    /* center images */
+    margin: 2rem 0;
+  }
+
+  .project-image {
+    width: 85%;
+    max-width: 900px;
+    border: 2px solid #e5e7eb;
+    /* light gray border */
+    border-radius: 8px;
+    padding: 8px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+</style>
+
+<body>
+  <div id="navbar-root"></div>
+
+  <main class="section-container">
+    <section id="digital-flea-market" class="project-section">
+      <header class="project-header">
+        <h1>Fringe Benefits Application </h1>
+        <p class="project-tagline">
+          A full-stack web based application that digitizes the traditional fringe benefits management process for
+          employees and departments.
+        </p>
+      </header>
+      <img src="../images/fringe_home.png" alt="Fringe Benefits App Screenshot" class="project-image" width="850px"
+        height="450px">
+      <section class="project-overview">
+        <h2>Overview</h2>
+        <p>
+          The Fringe Benefits Application is a comprehensive full-stack web application designed to streamline the
+          management of employee fringe benefits within an organization.
+          Fringe benefits are forms of compensation provided to employees or related parties in
+          addition to regular wages. These benefits can take many forms—such as event tickets,
+          travel, club memberships, or reimbursements for certain expenses—and are considered part
+          of the overall value an individual receives from the university.<br>Users can properly report taxable fringe
+          benefits in compliance with IRS regulations. It provides a user-friendly interface for departments to view and
+          manage benefits for employees, while also offering administrative tools for Payroll to oversee and allocate
+          resources effectively.
+        </p>
+      </section>
+
+      <section class="project-problem">
+        <h2>Problem Addressed</h2>
+        <p>
+          Traditional fringe benefits management often involves manual processes, paper forms, and disparate systems
+          that can lead to compliance risks. This process was carried out on paper forms. By outlining consistent
+          steps and responsibilities, the procedure helps ensure that all benefits provided beyond
+          standard wages are handled accurately and transparently, supporting both institutional
+          accountability and federal compliance.
+        </p>
+      </section>
+
+      <section class="project-features">
+        <h2>Key Features</h2>
+        <ul>
+          <li><strong>Home screen:</strong> Departments can submit fringe benefit requests for employees using this
+            page. The form has many dependent dropdowns, and data is stored in JSON.</li>
+          <li><strong>History screen:</strong> The Fringe Benefits form History screen shows request id, grantor department, department
+contact, employee name, benefit type, date submitted, status, and taxability. It also allows the user to filter the list of submissions.
+The History tab at the top of the screen lets departmental users view all form submissions
+within their fund-org security access. It is a helpful place to check the status of each form
+and see the taxability determination for each fringe benefit.
+.</li>
+          <li><strong>Booth scheduling:</strong> Assign and manage booth slots for vendors across different dates or
+            events.</li>
+          <li><strong>Analytics:</strong> Aggregate vendor performance metrics such as product counts, inventory status,
+            and activity.</li>
+          <li><strong>Customer-facing views:</strong> Browse products and vendors to plan visits and discover
+            merchandise ahead of time.</li>
+        </ul>
+      </section>
+
+      <section class="project-tech-stack">
+        <h2>Technologies & Architecture</h2>
+
+        <h3>Development</h3>
+        <ul>
+          <li><strong>IDE:</strong> Visual Studio Code</li>
+          <li><strong>Source Control:</strong> GitLab</li>
+          <li><strong>API Testing:</strong> Postman</li>
+        </ul>
+
+        <h3>Database Layer</h3>
+        <ul>
+          <li><strong>MySQL 8.0:</strong> Relational DBMS with ACID compliance using the InnoDB storage engine.</li>
+          <li><strong>Docker Compose:</strong> Containerized database deployment for consistent local environments.</li>
+          <li><strong>Key capabilities:</strong> Foreign key constraints, transaction support, and normalized schema
+            design.</li>
+        </ul>
+
+        <h3>Backend Layer</h3>
+        <ul>
+          <li><strong>Node.js &amp; Express:</strong> RESTful API server for vendor, product, and analytics endpoints.
+          </li>
+          <li><strong>MySQL2 driver:</strong> Database connectivity with parameterized queries for secure data access.
+          </li>
+          <li><strong>API endpoints:</strong> Vendor management, product CRUD operations, and analytics aggregation.
+          </li>
+        </ul>
+
+        <h3>Frontend Layer</h3>
+        <ul>
+          <li><strong>React 18:</strong> Component-based UI for dashboards and product views.</li>
+          <li><strong>Tailwind CSS:</strong> Utility-first styling for responsive, consistent layouts.</li>
+          <li><strong>React Router:</strong> Client-side routing for navigation between vendor dashboards, product
+            pages, and other views.</li>
+        </ul>
+      </section>
+
+      <section class="project-implementation">
+        <h2>Implementation Highlights</h2>
+        <ul>
+          <li><strong>Containerized setup:</strong> Application and database run in Docker containers for reproducible
+            environments.</li>
+          <li><strong>Data integrity:</strong> Use of foreign keys and transactions to maintain consistent relationships
+            between vendors, products, and booths.</li>
+          <li><strong>Modular architecture:</strong> Separation of concerns across database, backend API, and frontend
+            UI layers.</li>
+        </ul>
+      </section>
+
+      <section class="project-media">
+        <h2>Screenshots & Visuals</h2>
+        <p>
+          Below are some screenshots showcasing key features of the Digital Flea Market application:
+        </p>
+        <div class="project-demo">
+          <video width="100%" controls>
+            <source src="../projects/fleamarket_demo.mp4" type="video/mp4">
+          </video>
+          <h4>Project Demo</h4>
+        </div>
+        <div class="screenshot-gallery">
+          <img src="../images/fleamarket_dashboard.png" alt="Vendor Dashboard" class="project-image">
+          <img src="../images/fleamarket_booths.png" alt="Booth Scheduling" class="project-image">
+          <img src="../images/product_details.png" alt="Product Details" class="project-image">
+          <img src="../images/vendor_details.png" alt="Vendor Details" class="project-image">
+        </div>
+
+        </div>
+      </section>
+
+      <section class="project-links">
+        <h2>Links</h2>
+        <ul>
+          <li><a href="https://github.com/apurvD/fleamarket-app" target="_blank" rel="noopener noreferrer">View Source
+              on GitHub</a></li>
+          <li><a href="https://fleamarket-app-olive.vercel.app/" target="_blank" rel="noopener noreferrer">Frontend
+              Demo</a></li>
+        </ul>
+      </section>
+    </section>
+  </main>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-gray-800 bg-white font-sans;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply py-12 px-4 max-w-6xl mx-auto;
+  }
+
+  .card {
+    @apply bg-white rounded-md shadow-sm p-6 my-4 border-l-4 border-vt-orange;
+  }
+
+  .skill-tag {
+    @apply inline-block bg-vt-orange text-white py-1 px-3 rounded-full mr-2 mb-2 text-sm;
+  }
+
+  .project-image {
+    @apply w-full max-w-3xl rounded-md border border-gray-200 shadow-sm;
+  }
+
+  .vt-footer {
+    @apply bg-vt-maroon text-white text-center py-6;
+  }
+
+  .site-nav {
+    @apply fixed top-0 left-0 right-0 bg-vt-maroon text-white z-50 shadow;
+  }
+
+  .nav-inner { @apply max-w-6xl mx-auto flex items-center justify-between py-4 px-4; }
+  .nav-link { @apply text-white font-semibold hover:text-vt-orange; }
+}

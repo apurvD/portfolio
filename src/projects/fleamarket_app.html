@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Digital Flea Market</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<style>
+  .screenshot-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* spacing between images */
+  align-items: center; /* center images */
+  margin: 2rem 0;
+}
+
+.project-image {
+  width: 85%;
+  max-width: 900px;
+  border: 2px solid #e5e7eb; /* light gray border */
+  border-radius: 8px;
+  padding: 8px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+</style>
+<body>
+  <div id="navbar-root"></div>
+
+  <main class="section-container">
+<section id="digital-flea-market" class="project-section">
+  <header class="project-header">
+    <h1>Digital Flea Market – Database-Driven Marketplace Platform</h1>
+    <p class="project-tagline">
+      A full-stack web application to digitize vendor operations, booth scheduling, and product discovery at flea markets.
+    </p>
+  </header>
+  <img src="../images/fleamarket_home.png" alt="Flea Market App Screenshot" class="project-image" width="850px" height="450px">
+  <section class="project-overview">
+    <h2>Overview</h2>
+    <p>
+      Digital Flea Market is a database-driven marketplace platform designed to bring traditional flea markets online.
+      The application enables vendors to manage inventory, schedule booth slots, and showcase products, while giving
+      customers a way to browse merchandise and plan their visits more effectively.
+    </p>
+  </section>
+
+  <section class="project-problem">
+    <h2>Problem Addressed</h2>
+    <p>
+      Traditional flea markets often lack digital infrastructure for individual vendors. This makes it difficult for
+      customers to discover merchandise in advance, plan their visits, and compare offerings. Vendors also struggle to
+      track inventory and sales performance in a structured way. This project addresses these gaps by providing a
+      centralized, vendor-friendly digital marketplace.
+    </p>
+  </section>
+
+  <section class="project-features">
+    <h2>Key Features</h2>
+    <ul>
+      <li><strong>Vendor dashboard:</strong> Manage inventory, booth schedules, and product listings from a single interface.</li>
+      <li><strong>Product CRUD operations:</strong> Create, read, update, and delete products with detailed views and categorization.</li>
+      <li><strong>Booth scheduling:</strong> Assign and manage booth slots for vendors across different dates or events.</li>
+      <li><strong>Analytics:</strong> Aggregate vendor performance metrics such as product counts, inventory status, and activity.</li>
+      <li><strong>Customer-facing views:</strong> Browse products and vendors to plan visits and discover merchandise ahead of time.</li>
+    </ul>
+  </section>
+
+  <section class="project-tech-stack">
+    <h2>Technologies & Architecture</h2>
+
+    <h3>Development</h3>
+    <ul>
+      <li><strong>IDE:</strong> Visual Studio Code</li>
+      <li><strong>Source Control:</strong> GitLab</li>
+      <li><strong>API Testing:</strong> Postman</li>
+    </ul>
+
+    <h3>Database Layer</h3>
+    <ul>
+      <li><strong>MySQL 8.0:</strong> Relational DBMS with ACID compliance using the InnoDB storage engine.</li>
+      <li><strong>Docker Compose:</strong> Containerized database deployment for consistent local environments.</li>
+      <li><strong>Key capabilities:</strong> Foreign key constraints, transaction support, and normalized schema design.</li>
+    </ul>
+
+    <h3>Backend Layer</h3>
+    <ul>
+      <li><strong>Node.js &amp; Express:</strong> RESTful API server for vendor, product, and analytics endpoints.</li>
+      <li><strong>MySQL2 driver:</strong> Database connectivity with parameterized queries for secure data access.</li>
+      <li><strong>API endpoints:</strong> Vendor management, product CRUD operations, and analytics aggregation.</li>
+    </ul>
+
+    <h3>Frontend Layer</h3>
+    <ul>
+      <li><strong>React 18:</strong> Component-based UI for dashboards and product views.</li>
+      <li><strong>Tailwind CSS:</strong> Utility-first styling for responsive, consistent layouts.</li>
+      <li><strong>React Router:</strong> Client-side routing for navigation between vendor dashboards, product pages, and other views.</li>
+    </ul>
+  </section>
+
+  <section class="project-implementation">
+    <h2>Implementation Highlights</h2>
+    <ul>
+      <li><strong>Containerized setup:</strong> Application and database run in Docker containers for reproducible environments.</li>
+      <li><strong>Data integrity:</strong> Use of foreign keys and transactions to maintain consistent relationships between vendors, products, and booths.</li>
+      <li><strong>Modular architecture:</strong> Separation of concerns across database, backend API, and frontend UI layers.</li>
+    </ul>
+  </section>
+
+  <section class="project-media">
+    <h2>Screenshots & Visuals</h2>
+    <p>
+      Below are some screenshots showcasing key features of the Digital Flea Market application:
+    </p>
+                        <div class="project-demo">
+                        <video width="100%" controls>
+                            <source src="../projects/fleamarket_demo.mp4" type="video/mp4">
+                        </video>
+                        <h4>Project Demo</h4>
+                    </div>
+<div class="screenshot-gallery">
+  <img src="../images/fleamarket_dashboard.png" alt="Vendor Dashboard" class="project-image">
+  <img src="../images/fleamarket_booths.png" alt="Booth Scheduling" class="project-image">
+  <img src="../images/product_details.png" alt="Product Details" class="project-image">
+  <img src="../images/vendor_details.png" alt="Vendor Details" class="project-image">
+</div>
+
+    </div>
+  </section>
+
+      <section class="project-links">
+        <h2>Links</h2>
+        <ul>
+          <li><a href="https://github.com/apurvD/fleamarket-app" target="_blank" rel="noopener noreferrer">View Source on GitHub</a></li>
+          <li><a href="https://fleamarket-app-olive.vercel.app/" target="_blank" rel="noopener noreferrer">Frontend Demo</a></li>
+        </ul>
+      </section>
+    </section>
+  </main>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
+
