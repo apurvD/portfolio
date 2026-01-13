@@ -7,7 +7,7 @@ export default function Fleamarket() {
         <div className="card">
           <h1 className="text-2xl font-bold">Digital Flea Market – Database-Driven Marketplace Platform</h1>
           <p className="text-gray-700 mt-2">A full-stack web application to digitize vendor operations, booth scheduling, and product discovery at flea markets.</p>
-          <img src="/src/images/fleamarket_home.png" alt="Flea Market App" className="project-image my-4" />
+          <img src="/images/fleamarket_home.png" alt="Flea Market App" className="project-image my-4" />
 
           <h2 className="text-xl font-semibold mt-4">Overview</h2>
           <p className="text-gray-700">Digital Flea Market is a database-driven marketplace platform designed to bring traditional flea markets online. The application enables vendors to manage inventory, schedule booth slots, and showcase products, while giving customers a way to browse merchandise and plan their visits more effectively.</p>
@@ -25,16 +25,16 @@ export default function Fleamarket() {
 
           <div className="my-4">
             <video controls className="w-full max-w-3xl">
-              <source src="/src/projects/fleamarket_demo.mp4" type="video/mp4" />
+              <source src="/projects/fleamarket_demo.mp4" type="video/mp4" />
             </video>
             <h4 className="mt-2">Project Demo</h4>
           </div>
 
           <div className="grid gap-4">
-            <img src="/src/images/fleamarket_dashboard.png" alt="Vendor Dashboard" className="project-image" />
-            <img src="/src/images/fleamarket_booths.png" alt="Booth Scheduling" className="project-image" />
-            <img src="/src/images/product_details.png" alt="Product Details" className="project-image" />
-            <img src="/src/images/vendor_details.png" alt="Vendor Details" className="project-image" />
+            <img src="/images/fleamarket_dashboard.png" alt="Vendor Dashboard" className="project-image" />
+            <img src="/images/fleamarket_booths.png" alt="Booth Scheduling" className="project-image" />
+            <img src="/images/product_details.png" alt="Product Details" className="project-image" />
+            <img src="/images/vendor_details.png" alt="Vendor Details" className="project-image" />
           </div>
 
           <h3 className="mt-6">Links</h3>
