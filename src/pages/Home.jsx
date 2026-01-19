@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function Home() {
   return (
-    <main className="pt-20">
+    <main>
       <section id="about" className="section-container">
         <div className="card">
           <h2 className="text-2xl font-bold text-vt-maroon mb-4">Welcome to My Portfolio!</h2>
@@ -141,42 +141,74 @@ export default function Home() {
       </section>
 
       <section id="projects" className="section-container">
-        <h2 className="text-2xl font-bold text-vt-maroon mb-4">What I Can Do</h2>
+        <h2 className="text-2xl font-bold text-vt-maroon mb-4">Technical Skills</h2>
         <div className="card">
-          <h3 className="font-semibold mb-3">Technical Skills</h3>
-          <div className="flex flex-wrap">
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">Node.js</span>
-            <span class="skill-tag">Express.js</span>
-            <span class="skill-tag">SQL</span>
-            <span class="skill-tag">MySQL</span>
-            <span class="skill-tag">Database Design</span>
-            <span class="skill-tag">RESTful APIs</span>
-            <span class="skill-tag">Docker</span>
-            <span class="skill-tag">Docker Compose</span>
-            <span class="skill-tag">GitHub</span>
-            <span class="skill-tag">Azure DevOps</span>
-            <span class="skill-tag">ServiceNow</span>
-            <span class="skill-tag">Power BI</span>
-            <span class="skill-tag">Power Apps</span>
-            <span class="skill-tag">Power Automate</span>
-            <span class="skill-tag">ASP.NET</span>
-            <span class="skill-tag">Blazor</span>
-            <span class="skill-tag">Oracle</span>
-            <span class="skill-tag">Algolia</span>
-            <span class="skill-tag">API Testing</span>
-            <span class="skill-tag">Postman</span>
-            <span class="skill-tag">Full‑Stack Development</span>
-            <span class="skill-tag">System Design</span>
-            <span class="skill-tag">Data Modeling</span>
-            <span class="skill-tag">UI/UX</span>
+
+          <div class="skill-group">
+            <h4 class="skill-group-title">Languages</h4>
+            <div class="flex flex-wrap">
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">C#</span>
+              <span class="skill-tag">VB.NET</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4 class="skill-group-title">Frameworks & Libraries</h4>
+            <div class="flex flex-wrap">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">ASP.NET</span>
+              <span class="skill-tag">Blazor</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Docker Compose</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4 class="skill-group-title">Databases</h4>
+            <div class="flex flex-wrap">
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">Oracle</span>
+              <span class="skill-tag">Database Design</span>
+              <span class="skill-tag">Data Modeling</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4 class="skill-group-title">Tools</h4>
+            <div class="flex flex-wrap">
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">Azure DevOps</span>
+              <span class="skill-tag">ServiceNow</span>
+              <span class="skill-tag">Power BI</span>
+              <span class="skill-tag">Power Apps</span>
+              <span class="skill-tag">Power Automate</span>
+              <span class="skill-tag">Postman</span>
+              <span class="skill-tag">API Testing</span>
+              <span class="skill-tag">Algolia</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4 class="skill-group-title">Core Competencies</h4>
+            <div class="flex flex-wrap">
+              <span class="skill-tag">Full‑Stack Development</span>
+              <span class="skill-tag">RESTful APIs</span>
+              <span class="skill-tag">System Design</span>
+              <span class="skill-tag">UI/UX</span>
+            </div>
           </div>
         </div>
 
+
         <div className="card">
-          <h3 className="font-semibold mb-3">Featured Projects</h3>
+          <h2 className="text-2xl font-bold text-vt-maroon mb-4">Featured Projects</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <Link to="/projects/fleamarket" className="block p-4 border border-gray-100 rounded-md hover:shadow">
               <h4 className="font-semibold">Digital Flea Market App</h4>
@@ -194,6 +226,12 @@ export default function Home() {
               <h4 className="font-semibold">NLP Next-Word Prediction</h4>
               <img src="/images/nlp_home.png" alt="NLP" className="project-image mt-3" />
               <p className="mt-3 text-sm text-gray-700">Predicting the subsequent word using n-gram models and GRU-based RNNs.</p>
+            </Link>
+
+            <Link to="/projects/CodeCart" className="block p-4 border border-gray-100 rounded-md hover:shadow">
+              <h4 className="font-semibold">CodeCart: Barcode enabled app for Inventory Management</h4>
+              <img src="/images/codecart_logo.png" alt="CodeCart" className="project-image mt-3" />
+              <p className="mt-3 text-sm text-gray-700">A full-stack web application to digitize vendor operations, booth scheduling, and product discovery at flea markets.</p>
             </Link>
           </div>
         </div>

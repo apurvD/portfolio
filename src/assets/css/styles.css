@@ -70,14 +70,61 @@ body {
     transform: translateY(-5px);
 }
 
-.skill-tag {
-    background-color: var(--vt-orange);
-    color: var(--text-light);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    display: inline-block;
-    margin: 0.25rem;
+.skill-group {
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd; /* Subtle border for definition */
+  border-radius: 6px; /* Rounded corners for consistency */
+  padding: 1rem; /* Adds breathing room, flexible on mobile */
+  background: #f9f9f97c; /* Light background to match other panels */
+  border-left: 4px solid var(--vt-orange); /* Accent border like section panels */
 }
+
+.skill-group-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+  margin-top: 0; /* Ensures title aligns with padding */
+}
+.mobile-screenshots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.mobile-shot {
+  width: 100%;
+  max-width: 420px;   /* keeps them nicely sized on desktop */
+  max-width: 300px;   /* keeps them nicely sized on desktop */
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Mobile behavior */
+@media (max-width: 640px) {
+  .mobile-screenshots {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile-shot {
+    max-width: 300px; /* slightly larger on mobile */
+  }
+}
+
+
+.skill-tag {
+  background: var(--vt-orange);
+  border: 1px solid #e5e7eb;
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin: 4px;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
 
 .vt-footer {
     background-color: var(--vt-maroon);
@@ -207,24 +254,49 @@ body>.section-container,
 }
 
 .profile-image {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;        /* allows wrapping on smaller screens */
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 1rem;
 }
 
 .profile-image img {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    border: 2px solid #e5e7eb;
-    padding: 6px;
-    background: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  width: auto;            /* prevents forced stretching */
+  max-width: 300px;       /* keeps images nicely sized on desktop */
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #e5e7eb;
+  padding: 6px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
+
+.web-app-images {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.web-app-images img {
+  width: 100%;
+  max-width: 800px;      /* perfect for desktop screenshots */
+  height: auto;           /* keeps aspect ratio */
+  border-radius: 8px;
+  border: 2px solid #e5e7eb;
+  padding: 6px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Mobile optimization */
+@media (max-width: 640px) {
+  .web-app-images img {
+    max-width: 100%;      /* full width on mobile */
+  }
+}
+
 
 .education {
     margin: 0.75rem 0 0 0;

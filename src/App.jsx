@@ -8,7 +8,7 @@ import Experience from './pages/Experience'
 import Fleamarket from './pages/projects/Fleamarket'
 import FringeBenefits from './pages/projects/FringeBenefits'
 import NlpPrediction from './pages/projects/NlpNextWord'
-
+import CodeCart from './pages/projects/CodeCart'
 export default function App() {
   return (
     <>
@@ -19,6 +19,7 @@ export default function App() {
         <Route path="/projects/fleamarket" element={<Fleamarket />} />
         <Route path="/projects/fringe" element={<FringeBenefits />} />
         <Route path="/projects/nlp" element={<NlpPrediction />} />
+        <Route path="/projects/CodeCart" element={<CodeCart />} />
         <Route path="/about" element={<About />} />
         <Route path="/experience" element={<Experience />} />
       </Routes>

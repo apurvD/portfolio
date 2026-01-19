@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function FringeBenefits() {
   return (
-    <main className="pt-20">
+    <main>
       <section className="section-container">
         <div className="card">
           <h1 className="text-2xl font-bold">Fringe Benefits Application</h1>
