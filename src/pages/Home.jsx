@@ -44,10 +44,14 @@ export default function Home() {
             <li className="border border-gray-100 p-3 rounded-md">
               <div className="flex justify-between font-semibold">Virginia Tech, Blacksburg, VA <span className="text-gray-600">2024 – May 2026</span></div>
               <div className="text-sm">Master of Science in Computer Engineering — GPA: 4.0</div>
+              <p><a href="/certificates/apurvsd_Transcipt.pdf" target="_blank"
+                rel="noopener">View Transcript</a></p>
             </li>
             <li className="border border-gray-100 p-3 rounded-md">
               <div className="flex justify-between font-semibold">Savitribai Phule Pune University, India <span className="text-gray-600">2020 – 2024</span></div>
               <div className="text-sm">Bachelor of Engineering in Computer Engineering — CGPA: 9.58/10</div>
+                <p><a href="/certificates/Apurv BE Passing Certificate.pdf" target="_blank"
+                rel="noopener">View Certificate</a></p>
             </li>
           </ul>
         </div>
