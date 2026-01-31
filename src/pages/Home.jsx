@@ -26,14 +26,14 @@ export default function Home() {
                 in web technologies, including Frontend Development and PHP. My work also extends to API
                 development using both PHP and Python. I have experience in building applications in ASP.NET and
                 Entity Framework
-                using languages like C#, VB.NET, and Blazor.</p>
+                using languages like C#, VB.NET, and Blazor. I enjoy leveraging AI agents in projects, automating repetitive tasks and enhancing productivity.</p>
 
               <p className="mb-3">Other than programming and technology, I enjoy hiking, and occasionally playing football, basketball, and chess.</p>
             </div>
             <div className="w-full md:w-48 mt-4 md:mt-0">
               <img src="/images/profile.jpg" alt="Apurv" className="rounded-md shadow-md" />
               <br></br>
-              <img src="/images/apurv-mile.jpg" alt="Apurv" className="rounded-md shadow-md" />
+              <img src="/mimages/apurv-mile.jpg" alt="Apurv" className="rounded-md shadow-md" />
             </div>
           </div>
         </div>
@@ -246,6 +246,10 @@ export default function Home() {
         <div className="card">
           <h4 className="mb-2">The following certifications are verified. Please click on the links to view the certificates.</h4>
           <ul className="list-disc list-inside">
+            <li class="cert-item">
+              <a href="/certificates/NVIDIA_ Gen AI with Diffusion Models.pdf" target="_blank"
+                rel="noopener">NVIDIA Gen AI with Diffusion Models Certificate</a>
+            </li>
             <li class="cert-item">
               <a href="/certificates/HDSC Fall 2022 Internship Completion.pdf" target="_blank"
                 rel="noopener">Hamoye Data Science Internship Completion Certificate</a>
