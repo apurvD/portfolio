@@ -31,9 +31,11 @@ export default function Home() {
               <p className="mb-3">Other than programming and technology, I enjoy hiking, and occasionally playing football, basketball, and chess.</p>
             </div>
             <div className="w-full md:w-48 mt-4 md:mt-0">
-              <img src="/images/profile.jpg" alt="Apurv" className="rounded-md shadow-md" />
+              <img src="/images/Apurv_Linkedin.jpeg" alt="Apurv Linkedin" className="rounded-md shadow-md" />
               <br></br>
-              <img src="/mimages/apurv-mile.jpg" alt="Apurv" className="rounded-md shadow-md" />
+              <img src="/images/profile.jpg" alt="Apurv profile" className="rounded-md shadow-md" />
+              <br></br>
+              <img src="/images/apurv-mile.jpg" alt="Apurv Mile" className="rounded-md shadow-md" />
             </div>
           </div>
         </div>
