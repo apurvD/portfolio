@@ -28,10 +28,27 @@ export default function FringeBenefits() {
 
           <div className="my-4">
             <video controls className="w-full max-w-3xl">
-              <source src="/projects/Deployment_NWP.mp4" type="video/mp4" />
+              <source src="/projects/Fringe_Making_New_Request.mp4" type="video/mp4" />
             </video>
-            <h4 className="mt-2">Project Demo</h4>
+            <h4 className="mt-2">Demo: Making a new request for an employee:</h4>
           </div>
+          <br />
+
+          <div className="my-4">
+            <video controls className="w-full max-w-3xl">
+              <source src="/projects/Fringe_Employee_Actions.mp4" type="video/mp4" />
+            </video>
+            <h4 className="mt-2">Demo: Employee actions:</h4>
+          </div>
+          <br />
+
+          <div className="my-4">
+            <video controls className="w-full max-w-3xl">
+              <source src="/projects/Fringe_Payroll_Actions.mp4" type="video/mp4" />
+            </video>
+            <h4 className="mt-2">Demo: Payroll actions:</h4>
+          </div>
+          <br />
         </div>
       </section>
     </main>
