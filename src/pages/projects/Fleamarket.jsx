@@ -11,10 +11,12 @@ export default function Fleamarket() {
           <div className='web-app-images'>
             <img src="/images/fleamarket_home.png" alt="Flea Market App" />
           </div>
-
+        
           <h2 className="text-xl font-semibold mt-4">Overview</h2>
           <p className="text-gray-700">Digital Flea Market is a database-driven marketplace platform designed to bring traditional flea markets online. The application enables vendors to manage inventory, schedule booth slots, and showcase products, while giving customers a way to browse merchandise and plan their visits more effectively.</p>
 
+          <h2 className="text-xl font-semibold mt-4">Try it Out!</h2>
+          <a href="https://github.com/apurvD/fleamarket-app" target="_blank" rel="noreferrer" className="text-vt-maroon underline">Go to Production App </a>
           <h2 className="text-xl font-semibold mt-4">Key Features</h2>
           <ul className="list-disc list-inside ml-4 text-gray-700">
             <li><strong>Vendor dashboard:</strong> Manage inventory, booth schedules, and product listings from a single interface.</li>
@@ -51,7 +53,7 @@ export default function Fleamarket() {
           <h3 className="mt-6">Links</h3>
           <ul>
             <li><a href="https://github.com/apurvD/fleamarket-app" target="_blank" rel="noreferrer" className="text-vt-maroon underline">View Source on GitHub</a></li>
-            <li><a href="https://fleamarket-app-olive.vercel.app/" target="_blank" rel="noreferrer" className="text-vt-maroon underline">Frontend Demo</a></li>
+            <li><a href="https://fleamarketapp.vercel.app/" target="_blank" rel="noreferrer" className="text-vt-maroon underline">Frontend Demo</a></li>
           </ul>
         </div>
       </section>
