@@ -8,6 +8,11 @@ export default function Projects() {
         <h2 className="text-2xl font-bold text-vt-maroon mb-4">Projects</h2>
         <div className="card">
           <div className="grid md:grid-cols-2 gap-6">
+            <Link to="/projects/distributed-log-pipeline" className="block p-4 border border-gray-100 rounded-md hover:shadow">
+              <h4 className="font-semibold">Distributed Log Pipeline</h4>
+              <img src="/images/Grafana_Dashboard_Local.png" alt="Distributed Log Pipeline" className="project-image mt-3" />
+              <p className="mt-3 text-sm text-gray-700">A fault-tolerant, high-throughput streaming data pipeline deployed on AWS to process, anonymize, and store real-time event logs.</p>
+            </Link>
             <Link to="/projects/fleamarket" className="block p-4 border border-gray-100 rounded-md hover:shadow">
               <h4 className="font-semibold">Digital Flea Market App</h4>
               <img src="/images/fleamarket_home.png" alt="Flea Market" className="project-image mt-3" />

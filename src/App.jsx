@@ -9,6 +9,7 @@ import Fleamarket from './pages/projects/Fleamarket'
 import FringeBenefits from './pages/projects/FringeBenefits'
 import NlpPrediction from './pages/projects/NlpNextWord'
 import CodeCart from './pages/projects/CodeCart'
+import DistributedLogPipeline from './pages/projects/DistributedLogPipeline'
 export default function App() {
   return (
     <>
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="/projects/CodeCart" element={<CodeCart />} />
         <Route path="/about" element={<About />} />
         <Route path="/experience" element={<Experience />} />
+        <Route path="/projects/distributed-log-pipeline" element={<DistributedLogPipeline />} />
       </Routes>
     </>
   )
