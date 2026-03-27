@@ -31,7 +31,7 @@ export default function Home() {
               <p className="mb-3">Other than programming and technology, I enjoy hiking, and occasionally playing football, basketball, and chess.</p>
             </div>
             <div className="w-full md:w-48 mt-4 md:mt-0">
-              <img src="/images/Apurv_professional.png" alt="Apurv Linkedin" className="rounded-md shadow-md" />
+              <img src="/images/Apurv_profile.jpg" alt="Apurv Deshpande profile" className="rounded-md shadow-md" />
               <br></br>
               <img src="/images/profile.jpg" alt="Apurv profile" className="rounded-md shadow-md" />
             </div>
@@ -157,6 +157,7 @@ export default function Home() {
               <span class="skill-tag">Java</span>
               <span class="skill-tag">C#</span>
               <span class="skill-tag">VB.NET</span>
+              <span class="skill-tag">SQL</span>
             </div>
           </div>
 
@@ -177,6 +178,9 @@ export default function Home() {
             <h4 class="skill-group-title">Databases</h4>
             <div class="flex flex-wrap">
               <span class="skill-tag">SQL</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">AWS RDS</span>
               <span class="skill-tag">MySQL</span>
               <span class="skill-tag">Oracle</span>
               <span class="skill-tag">Database Design</span>
@@ -196,6 +200,9 @@ export default function Home() {
               <span class="skill-tag">Postman</span>
               <span class="skill-tag">API Testing</span>
               <span class="skill-tag">Algolia</span>
+              <span class="skill-tag">Terraform</span>
+              <span class="skill-tag">AWS EC2, S3, Lambda, DynamoDB, IAM</span>
+
             </div>
           </div>
 
@@ -214,6 +221,11 @@ export default function Home() {
         <div className="card">
           <h2 className="text-2xl font-bold text-vt-maroon mb-4">Featured Projects</h2>
           <div className="grid md:grid-cols-2 gap-6">
+            <Link to="/projects/distributed-log-pipeline" className="block p-4 border border-gray-100 rounded-md hover:shadow">
+              <h4 className="font-semibold">Distributed Cloud Log Processing Pipeline</h4>
+              <img src="/images/Grafana_Dashboard_Local.png" alt="Log Pipeline" className="project-image mt-3" />
+              <p className="mt-3 text-sm text-gray-700">A fault-tolerant, high-throughput streaming data pipeline deployed on AWS built to process, anonymize, and store real-time event logs at scale.</p>
+            </Link>
             <Link to="/projects/fleamarket" className="block p-4 border border-gray-100 rounded-md hover:shadow">
               <h4 className="font-semibold">Digital Flea Market App</h4>
               <img src="/images/fleamarket_home.png" alt="Flea Market" className="project-image mt-3" />
