@@ -7,6 +7,19 @@
     @apply antialiased text-gray-800 bg-white font-sans;
   }
 
+  body.dark-mode {
+    @apply bg-gray-700 text-gray-900;
+    .card {
+      @apply bg-gray-800 text-gray-100 border-gray-600;
+    }
+    .skill-tag {
+      @apply bg-gray-800 text-gray-100;
+    }
+    .project-image {
+      @apply border-gray-600;
+    }
+  }
+
   /* Scroll reveal animation */
   html {
     scroll-behavior: smooth;
@@ -150,5 +163,28 @@
 
   button:hover, input:focus, select:focus, textarea:focus {
     @apply outline-none;
+  }
+
+  .topnav {
+    @apply flex items-center justify-between py-4 px-6;
+    background-color: #800000; /* Fixed maroon color */
+  }
+
+  .topnav.light {
+    @apply bg-white text-gray-800;
+  }
+
+  .topnav.dark {
+    @apply bg-gray-800 text-gray-100;
+  }
+
+  .theme-toggle {
+    @apply px-4 py-2 rounded-md border border-gray-300;
+    @apply transition-all duration-300;
+    color: azure;
+  }
+
+  .theme-toggle:hover {
+    @apply bg-gray-200 dark:bg-gray-700;
   }
 }
