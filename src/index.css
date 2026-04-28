@@ -1,17 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer base {
   body {
-    @apply antialiased text-gray-800 bg-white font-sans;
+    @apply antialiased text-gray-800 bg-white font-open-sans;
   }
 
   body.dark-mode {
-    @apply bg-gray-700 text-gray-900;
+    @apply bg-gray-900 text-gray-100;
+
     .card {
-      @apply bg-gray-800 text-gray-100 border-gray-600;
+      @apply bg-none bg-gray-800 text-gray-100 border-gray-600;
     }
+    
     .skill-tag {
       @apply bg-gray-800 text-gray-100;
     }
@@ -20,7 +22,6 @@
     }
   }
 
-  /* Scroll reveal animation */
   html {
     scroll-behavior: smooth;
   }
@@ -32,7 +33,7 @@
   }
 
   .card {
-    @apply bg-white rounded-md shadow-sm p-6 my-4 border-l-4 border-vt-orange;
+    @apply bg-gradient-to-br from-white to-gray-100 rounded-md shadow-sm p-6 my-4 border-l-4 border-vt-orange;
     @apply transition-all duration-300 ease-out;
     @apply animate-fadeIn;
   }
@@ -97,6 +98,7 @@
   /* Heading animations */
   h2, h3, h4, h5, h6 {
     @apply transition-all duration-300 ease-out;
+    @apply font-bold;
   }
 
   h2:hover {
@@ -178,13 +180,104 @@
     @apply bg-gray-800 text-gray-100;
   }
 
-  .theme-toggle {
-    @apply px-4 py-2 rounded-md border border-gray-300;
-    @apply transition-all duration-300;
-    color: azure;
+.theme-toggle {
+    @apply flex items-center justify-center w-10 h-10 bg-gray-200 rounded-full cursor-pointer shadow-sm;
+    @apply transition-all duration-300 hover:bg-gray-300 hover:scale-110;
   }
 
-  .theme-toggle:hover {
-    @apply bg-gray-200 dark:bg-gray-700;
+  body.dark-mode .theme-toggle {
+    @apply bg-gray-700 hover:bg-gray-600 shadow-none;
   }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-purple-500 to-indigo-500 text-white font-bold py-2 px-6 rounded-full shadow-md;
+    @apply transition-transform transform hover:scale-110 hover:shadow-lg;
+  }
+
+  .btn-primary:hover {
+    @apply from-indigo-500 to-purple-500;
+  }
+
+  .hero-section {
+    @apply bg-gradient-to-br from-blue-500 to-teal-400 text-white text-center py-20;
+  }
+
+  .hero-title {
+    @apply text-4xl font-extrabold mb-4;
+  }
+
+  .hero-subtitle {
+    @apply text-lg font-light;
+  }
+
+  .glow-effect {
+    @apply relative;
+  }
+
+  .glow-effect::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(45deg, rgba(255, 0, 150, 0.5), rgba(0, 204, 255, 0.5));
+    filter: blur(15px);
+    z-index: -1;
+  }
+}
+
+/* CSS */
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-5:hover,
+.button-5:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+/* Added hover styles for all sections */
+section {
+  @apply transition-all duration-300 ease-out;
+}
+
+section:hover {
+  @apply bg-orange-50 shadow-lg;
 }

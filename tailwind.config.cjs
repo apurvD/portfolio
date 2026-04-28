@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: 'class', // Enable dark mode using the 'class' strategy
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
@@ -9,6 +10,8 @@ module.exports = {
       },
       fontFamily: {
         sans: ['"Open Sans"', 'ui-sans-serif', 'system-ui'],
+        poppins: ['Poppins', 'sans-serif'],
+        'open-sans': ['Open Sans', 'sans-serif'],
       },
       keyframes: {
         fadeIn: {

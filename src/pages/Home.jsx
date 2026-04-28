@@ -37,9 +37,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-
+      </section>
+      <section id="education" className="section-container">
         <div className="card">
-          <h3 className="text-lg font-semibold mb-3">Education</h3>
+          <h2 className="text-2xl font-bold text-vt-maroon mb-4">Education</h2>
           <ul className="space-y-3">
             <li className="border border-gray-100 p-3 rounded-md">
               <div className="flex justify-between font-semibold">Virginia Tech, Blacksburg, VA <span className="text-gray-600">2024 – May 2026</span></div>
@@ -58,10 +59,8 @@ export default function Home() {
       </section>
 
       <section id="experience" className="section-container">
-        <h2 className="text-2xl font-bold text-vt-maroon mb-4">What I Have Done</h2>
-        <div className="grid gap-6">
           <div className="card md:col-span-2">
-            <h3 className="font-semibold mb-2">Professional Experience</h3>
+            <h2 className="text-2xl font-bold text-vt-maroon mb-4">Professional Experience</h2>
             <ol className="list-decimal list-inside space-y-4">
               <li>
                 <span className="font-bold">Applications and Software Developer (Summer 2025 Internship)</span>
@@ -141,13 +140,11 @@ export default function Home() {
               </li>
             </ol>
           </div>
-        </div>
       </section>
 
       <section id="projects" className="section-container">
-        <h2 className="text-2xl font-bold text-vt-maroon mb-4">Technical Skills</h2>
         <div className="card">
-
+        <h2 className="text-2xl font-bold text-vt-maroon mb-4">Technical Skills</h2>
           <div class="skill-group">
             <h4 class="skill-group-title">Languages</h4>
             <div class="flex flex-wrap">
@@ -158,6 +155,7 @@ export default function Home() {
               <span class="skill-tag">C#</span>
               <span class="skill-tag">VB.NET</span>
               <span class="skill-tag">SQL</span>
+              <span class="skill-tag">PHP</span>
             </div>
           </div>
 
@@ -171,6 +169,9 @@ export default function Home() {
               <span class="skill-tag">Blazor</span>
               <span class="skill-tag">Docker</span>
               <span class="skill-tag">Docker Compose</span>
+              <span class="skill-tag">Apache Kafka</span>
+              <span class="skill-tag">Grafana</span>
+              <span class="skill-tag">Prometheus</span>
             </div>
           </div>
 
@@ -185,6 +186,8 @@ export default function Home() {
               <span class="skill-tag">Oracle</span>
               <span class="skill-tag">Database Design</span>
               <span class="skill-tag">Data Modeling</span>
+              <span class="skill-tag">Query Optimization</span>
+              <span class="skill-tag">Indexing</span>
             </div>
           </div>
 
@@ -202,7 +205,7 @@ export default function Home() {
               <span class="skill-tag">Algolia</span>
               <span class="skill-tag">Terraform</span>
               <span class="skill-tag">AWS EC2, S3, Lambda, DynamoDB, IAM</span>
-
+              <span class="skill-tag">Azure App Service, Azure SQL Database</span>
             </div>
           </div>
 
@@ -213,6 +216,7 @@ export default function Home() {
               <span class="skill-tag">RESTful APIs</span>
               <span class="skill-tag">System Design</span>
               <span class="skill-tag">UI/UX</span>
+              <span class="skill-tag">Agile Development</span>
             </div>
           </div>
         </div>
@@ -254,8 +258,8 @@ export default function Home() {
       </section>
 
       <section id="certifications" className="section-container">
-        <h2 className="text-2xl font-bold text-vt-maroon mb-4">Certifications</h2>
         <div className="card">
+        <h2 className="text-2xl font-bold text-vt-maroon mb-4">Certifications</h2>
           <h4 className="mb-2">The following certifications are verified. Please click on the links to view the certificates.</h4>
           <ul className="list-disc list-inside">
             <li class="cert-item">
@@ -302,16 +306,17 @@ export default function Home() {
       </section>
 
       <section id="contact" className="section-container">
-        <h2 className="text-2xl font-bold text-vt-maroon mb-4">Get in Touch</h2>
         <div className="card text-center">
-          <h4 className="mb-2">If you'd like to discuss potential collaborations, job opportunities, or simply want to connect, feel free to reach out!
+        <h2 className="text-2xl font-bold text-vt-maroon mb-4">Get in Touch</h2>
+          <h4 className="text-lg">If you'd like to discuss potential collaborations, job opportunities, or simply want to connect, feel free to reach out!
             <br></br>I am always eager for a quick chat to explore new technologies, tackle challenging
             problems,
             and collaborate on innovative projects. <br></br>Best way to contact me is via email:</h4>
           <div className="flex justify-center gap-4">
-            <a href="https://www.linkedin.com/in/apurv-deshpande/" target="_blank" rel="noreferrer" className="text-vt-maroon underline">LinkedIn</a>
-            <a href="https://github.com/apurvD" target="_blank" rel="noreferrer" className="text-vt-maroon underline">GitHub</a>
-            <a href="mailto:apurvsd@vt.edu" className="text-vt-maroon underline">Email</a>
+            <a href="https://www.linkedin.com/in/apurv-deshpande/" class="button-5"target="_blank" rel="noreferrer" >LinkedIn</a>
+            <a href="https://github.com/apurvD" target="_blank" rel="noreferrer" class="button-5">GitHub</a>
+            <a href="mailto:apurv123deshpande@gmail.com" class="button-5" >Email</a>
+            
           </div>
         </div>
       </section>
