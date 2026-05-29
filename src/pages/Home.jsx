@@ -9,25 +9,11 @@ export default function Home() {
           <h2 className="text-2xl font-bold text-vt-maroon mb-4">Welcome to My Portfolio!</h2>
           <div className="md:flex md:gap-8 items-start">
             <div className="flex-1">
-              <p className="mb-3">Hello! I'm Apurv Deshpande, a Computer Engineering Master's student at Virginia Tech. This portfolio showcases my skills, experiences, and projects in software development, data engineering, and more. Feel free to explore the different sections and get in touch!</p>
+              <p className="mb-3">Hello! I am Apurv Deshpande, a Computer Engineering Master of Science graduate from Virginia Tech. This portfolio showcases my skills, my experiences, and my projects across software engineering, data pipelines, and full stack development. Feel free to explore the different sections and get in touch with me!</p>
 
-              <p className="mb-3">With a strong foundation in data collection, analysis, and exploration, I have
-                extensive
-                experience working on projects across various domains. I specialize in leveraging programming
-                languages such as Python and MySQL to extract meaningful insights from data, develop machine
-                learning models, and present findings that enable informed decision-making for individuals,
-                businesses, and organizations. Additionally, I am proficient in cloud computing with AWS,
-                utilizing services like EC2, S3, IAM, and RDS, particularly for deploying web-based
-                applications.</p>
+              <p className="mb-3">I bring close to two years of experience delivering enterprise applications and automated data solutions within university finance operations. I possess a strong foundation in backend development and data engineering, specializing in languages like C#, SQL, and Python to extract meaningful insights and build scalable software architectures. My expertise extends to designing interactive data models in Power BI and optimizing data ingestion pipelines to enable informed decision making for businesses and organizations. Additionally, I am highly proficient in cloud computing with AWS and Azure, utilizing core infrastructure services to deploy high availability web applications and microservices.</p>
 
-              <p className="mb-3">Beyond my experience in data engineering and finance, I have a deep interest
-                in competitive programming and software development. I am skilled in C++, Java, and Python and
-                have experience
-                in web technologies, including Frontend Development and PHP. My work also extends to API
-                development using both PHP and Python. I have experience in building applications in ASP.NET and
-                Entity Framework
-                using languages like C#, VB.NET, and Blazor. I enjoy leveraging AI agents in projects, automating repetitive tasks and enhancing productivity.</p>
-
+              <p className="mb-3">Beyond my experience in data systems and corporate finance, I maintain a deep interest in competitive programming and system design. I am skilled in core programming paradigms using C++ or Java and possess hands on experience with modern web technologies like React.js and PHP. My work includes building robust RESTful APIs, modernizing legacy systems, and engineering distributed event streams using Apache Kafka. I also actively integrate generative and agentic AI tools into my development workflows to automate repetitive tasks and maximize operational productivity.</p>
               <p className="mb-3">Other than programming and technology, I enjoy hiking, and occasionally playing football, basketball, and chess.</p>
             </div>
             <div className="w-full md:w-48 mt-4 md:mt-0">
